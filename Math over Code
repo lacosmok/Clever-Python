@@ -1,0 +1,17 @@
+heres how math is better over code
+
+Galactic numbers
+
+def summ(number, d):
+    n = (number - 1) // d
+    return n * (n + 1) * d // 2
+
+def solution(number):
+    return summ(number, 3) + summ(number, 5) - summ(number, 15)
+    
+    so sometimes its easier to do math instead of looking modules.
+    remember that integers might be fairly big, but floats cant in python.
+    
+    import decimal
+decimal.getcontext().prec = 100
+or ackewrman values
