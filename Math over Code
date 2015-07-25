@@ -15,3 +15,11 @@ def solution(number):
     import decimal
 decimal.getcontext().prec = 100
 or ackewrman values
+
+My program not that smart
+
+import sys
+sys.setrecursionlimit(100000)
+def solution(number):
+  sol =sum(i for i in range(number) if i%3==0 or i%5==0)
+  return sol
