@@ -13,3 +13,4 @@ Return 2 functions as Touples
 True
 
 Smart use of those 2:
+return None not in (a1, a2) and all(x**2 == y for x, y in zip(sorted(a1), sorted(a2)))
