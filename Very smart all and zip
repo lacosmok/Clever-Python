@@ -1,0 +1,33 @@
+My program:
+
+def comp(array1, array2):
+    licznik=0
+    if array1 is None or array2 is None:
+        return False
+    elif array1==[] or array2==[]:
+        return True
+    elif (array1 is not None) or (array2 is not None):
+        array1=sorted(array1)
+        array2=sorted(array2)
+        for x in range(len(array2)):
+            if array2[x]==(array1[x]*array1[x]):
+                licznik+=1                  
+        if licznik==len(array1):
+            return True
+        else:
+            return False
+    
+
+def comp(l1, l2):
+  if l1 == None or l2 == None: return False
+  l2.sort()
+  return all(x == l2[i] for i, x in enumerate(v * v for v in sorted(l1)))
+
+
+So he took all() function.. that returns true if all arg are true
+and later he used zip functions so he got it in like [a1[x],a2[x]] smart one.
+bcose it was zipped he could use later all and easly take x,y wow... impressive
+but i dont understande that none
+
+def comp(a1, a2):
+    return None not in (a1, a2) and all(x**2 == y for x, y in zip(sorted(a1), sorted(a2)))
